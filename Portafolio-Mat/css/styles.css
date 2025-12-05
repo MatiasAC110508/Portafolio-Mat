@@ -36,7 +36,7 @@ nav a {
   color: #00b894;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: 2px solid #00b894;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -49,12 +49,12 @@ nav a:hover {
 }
 
 main {
-  width: 90%;
+  width: 50%;
   max-width: 900px;
-  margin: 3rem auto;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .descripcion {
@@ -89,20 +89,38 @@ article {
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.7);
   transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  
 }
+
+.experiencia-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.ImgWalter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
 
 article:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(255,111,97,0.4);
+
 }
 
 #My-Photo {
-  float: right;
+  float: left;
   margin: 0 0 1rem 1rem;
   border-radius: 20px;
   border: 3px solid #ff6f61;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(255,111,97,0.3);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -136,14 +154,13 @@ footer a:hover {
 
 /* Imágenes de Walter */
 .Walter {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 150px;
   object-fit: cover;
   border-radius: 15px;
   margin: 0.5rem;
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
   transition: transform 0.3s, box-shadow 0.3s;
-  display: inline-block;
 }
 
 .Walter:hover {
@@ -152,10 +169,14 @@ footer a:hover {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   nav {
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+  }
+
+  main {
+    width: 90%;
   }
 
   #My-Photo {
@@ -163,10 +184,16 @@ footer a:hover {
     display: block;
     margin: 0 auto 1rem auto;
   }
+}
 
+@media (max-width: 500px) {
   .Walter {
     width: 150px;
     height: 150px;
-    margin: 0.3rem;
+    margin: 0.5rem;
+  }
+
+  .ImgWalter {
+    flex-direction: column; 
   }
 }
