@@ -91,27 +91,18 @@ article {
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center;  
-  
+  align-items: center;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(255,111,97,0.4);
 }
 
 .experiencia-list {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
-}
-
-
-.ImgWalter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}  
-
-article:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(255,111,97,0.4);
-
 }
 
 #My-Photo {
@@ -152,22 +143,6 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-/* Imágenes de Walter */
-.Walter {
-  width: 130px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 15px;
-  margin: 0.5rem;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.Walter:hover {
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 12px 25px rgba(255,111,97,0.4);
-}
-
 /* Responsive */
 @media (max-width: 900px) {
   nav {
@@ -183,17 +158,5 @@ footer a:hover {
     float: none;
     display: block;
     margin: 0 auto 1rem auto;
-  }
-}
-
-@media (max-width: 500px) {
-  .Walter {
-    width: 150px;
-    height: 150px;
-    margin: 0.5rem;
-  }
-
-  .ImgWalter {
-    flex-direction: column; 
   }
 }
