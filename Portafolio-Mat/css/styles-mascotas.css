@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #00b894;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #6c5ce7;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+header {
+  background: #111;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav h1 {
+  font-size: 2rem;
+  color: #ff6f61;
+}
+
+nav a {
+  color: #00b894;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #00b894;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00b894;
+  color: #111;
+  transform: scale(1.05);
+}
+
+main {
+  width: 50%;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  color: #ff6f61;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+article {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(255,111,97,0.4);
+}
+
+/* Imágenes de Walter */
+.Walter {
+  width: 130px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+
+
+
+
+}
+
+.walter-container {
+    display: flex;
+    justify-content: center;
+}
+
+.Walter:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(255,111,97,0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .Walter {
+    width: 150px;
+    height: 150px;
+    margin: 0.5rem;
+  }
+
+  .ImgWalter {
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid #6c5ce7;
+  color: #cccccc;
+}
