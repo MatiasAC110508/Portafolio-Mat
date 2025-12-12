@@ -1,0 +1,167 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.4)),
+    url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+}
+
+/* NAV */
+.nav-Walter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-Walter h1 {
+  font-size: 2rem;
+  color: #ececec;
+}
+
+.nav-Walter a {
+  color: #7552F2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #7552F2;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-Walter a:hover {
+  background-color: #7552F2;
+  color: #ececec;
+  transform: scale(1.05);
+}
+
+/* MAIN */
+main {
+  width: 50%;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* SECCIONES */
+section {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* TITULOS */
+h2, h3 {
+  color: #ececec;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 1rem auto 0 auto;
+  color: #cccccc;
+}
+
+/* CONTENEDOR DE IMÁGENES */
+.walter-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+/* IMÁGENES */
+.Walter {
+  width: 275px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #7552F2;
+  box-shadow: 0 8px 20px rgba(117, 82, 242, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Walter:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(117, 82, 242, 0.5);
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid #7552F2;
+  color: #cccccc;
+}
+
+footer a {
+  color: #8DE8F2;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+  color: #7552F2;
+  transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-Walter {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main {
+    width: 90%;
+  }
+}
+

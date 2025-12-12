@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", sans-serif;
+}
+
+/* Estilos generales del body */
+body {
+  min-height: 100vh; /* altura mínima de la pantalla */
+  display: flex; /* estructura en columna */
+  flex-direction: column;
+  color: #cccccc;
+  background:
+  linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.4)),
+  url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título del nav */
+nav h1 {
+  font-size: 2rem;
+  color: #ececec;
+}
+
+/* Enlaces del nav */
+nav a {
+  color: #7552F2;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #7552F2;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Hover del nav */
+nav a:hover {
+  background-color: #7552F2;
+  color: #ececec;
+  transform: scale(1.05);
+}
+
+/* Contenido principal */
+main {
+  width: 50%;
+  max-width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Texto descriptivo */
+.descripcion {
+  font-size: 1.2rem;
+  color: #cccccc;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Títulos */
+h2 {
+  color: #ececec;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Enlaces generales */
+a {
+  color: #8DE8F2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* Hover enlaces */
+a:hover {
+  color: #7552F2;
+}
+
+/* Secciones */
+section {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover sección */
+section:hover {
+  transform: translateY(-5px);
+}
+
+/* Lista de experiencia */
+.experiencia-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Imagen principal */
+#My-Photo {
+  margin: 0 0 1rem 1rem;
+  border-radius: 20px;
+  border: 3px solid #7552F2;
+  width: 275px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(117, 82, 242, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover imagen */
+#My-Photo:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(117, 82, 242, 0.5);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid #7552F2;
+  color: #cccccc;
+}
+
+/* Enlaces del footer */
+footer a {
+  color: #8DE8F2;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Hover enlaces footer */
+footer a:hover {
+  color: #7552F2;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main {
+    width: 90%;
+  }
+
+  #My-Photo {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+}
